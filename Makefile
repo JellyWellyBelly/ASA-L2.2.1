@@ -1,13 +1,13 @@
 CFLAGS = -Wall -g -pedantic
 
-Main: main.o
-	gcc -o Main main.o
+tg040: tg040.o
+	gcc -o tg040 tg040.o
 
-main.o: main.c
-	gcc $(CFLAGS) -c main.c
+tg040.o: tg040.c
+	gcc $(CFLAGS) -c tg040.c
 
 zip: clean
 	zip ProjetoSO-Final.zip *
 
 clean:
-	rm *.o Main
+	rm *.o *.zip tg040
