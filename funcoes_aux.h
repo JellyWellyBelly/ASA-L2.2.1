@@ -1,1 +1,0 @@
-#include "funcoes_aux.c"
